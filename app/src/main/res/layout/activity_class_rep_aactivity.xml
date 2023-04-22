@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassRepAactivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar"
+                android:layout_width="160dp"
+                android:layout_height="170dp"
+                android:padding="2dp"
+                android:background="#88B8E1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/IVPreviewImage"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/boyvoter"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ImageContrastCheck" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+
+            <TextView
+                android:id="@+id/gfg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/appbar"
+                android:paddingTop="2dp"
+                android:text="Name : Raju"
+                android:textColor="#004d00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gf_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_below="@id/gfg_text"
+                android:layout_toRightOf="@id/appbar"
+                android:paddingTop="2dp"
+                android:text="Gender : Male"
+                android:textColor="#004d00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/g_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gf_text"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/appbar"
+                android:paddingTop="2dp"
+                android:text="Catogery : Class Rep"
+                android:textColor="#004d00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_Doremon_vote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appbar"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="5dp"
+                android:onClick="onboyClicked"
+                android:text="VOTE" />
+
+            <TextView
+                android:id="@+id/Doreamon"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginTop="16dp"
+                android:textSize="10sp"
+                android:layout_below="@id/btn_Doremon_vote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                />
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2"
+        app:layout_constraintVertical_bias="0.362">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <com.google.android.material.appbar.AppBarLayout
+                android:id="@+id/appbar2"
+                android:layout_width="160dp"
+                android:layout_height="170dp"
+                android:padding="2dp"
+                android:background="#88B8E1">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/IVPreviewImage2"
+                    android:padding="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/shinchan"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="ImageContrastCheck" />
+            </com.google.android.material.appbar.AppBarLayout>
+
+
+            <TextView
+                android:id="@+id/gfg_text2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/appbar2"
+                android:paddingTop="2dp"
+                android:text="Name : Reema"
+                android:textColor="#004d00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/gf_text3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gfg_text2"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/appbar2"
+                android:paddingTop="2dp"
+                android:text="Gender : Female"
+                android:textColor="#004d00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/g_text4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gf_text3"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/appbar2"
+                android:paddingTop="2dp"
+                android:text="Catogery : Class Rep"
+                android:textColor="#004d00"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_Shinchan_vote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/appbar2"
+                android:text="VOTE"
+                android:layout_margin="5dp"
+                android:onClick="ongirlClicked"
+                />
+
+            <TextView
+                android:id="@+id/Shinchan"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_margin="8dp"
+                android:layout_marginTop="16dp"
+                android:textSize="10sp"
+                android:layout_below="@id/btn_Shinchan_vote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
